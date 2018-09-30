@@ -1,0 +1,33 @@
+
+html {
+   font: 16px/1.5 Helvetica, sans-serif;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 1.5rem;
+    border: 1px solid #CCC;
+    border-spacing: 10px;
+    border-collapse: collapse;
+}
+
+table th, td {
+    border: 1px solid #CCC;
+    padding: 0.3rem 0.5rem;
+}
+
+table th {
+    text-align: left;
+    background: #CCC
+}
+
+table tr:nth-child(odd){
+    background: rgb(241, 241, 241);
+}
+
+table tr:hover td{
+    background: black;
+    color: #fff;
+    border-color: transparent;
+}
