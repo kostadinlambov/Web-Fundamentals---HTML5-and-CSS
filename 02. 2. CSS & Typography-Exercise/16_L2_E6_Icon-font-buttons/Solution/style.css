@@ -1,0 +1,59 @@
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 5%;
+}
+
+body {
+    padding: 5em;
+}
+
+/* a.button {
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    margin: 1rem;
+} */
+
+a.button {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.8rem;
+    margin: 1rem;
+    transition: background 0.3s ease;
+}
+
+#data-star {
+    background-color: #008000;
+    color: #fff;
+}
+
+#data-envelope {
+    background-color: #FF8C00;
+    color: #fff;
+}
+
+a#data-star:hover {
+    background: red;
+    position: relative;
+    top: -10px;
+}
+
+a#data-star:hover i {
+    transition: transform 0.3s ease;
+    color: #000;
+    transform: rotate(360deg)
+}
+
+a#data-envelope:active {
+    background: red;
+    position: relative;
+    top: -10px;
+    transition: transform 0.3s ease;
+    transform: rotate(360deg)
+}
