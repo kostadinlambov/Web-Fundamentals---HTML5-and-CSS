@@ -1,0 +1,86 @@
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+
+* {
+    box-sizing: border-box;
+}
+
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    padding: 5rem;
+    background: #EEE;
+}
+
+body div.viewport:first-of-type{
+    background: linear-gradient(to right, rgba(25,93,157,1) 0%, rgba(66,204,162,1) 100%);
+}
+
+body div.viewport:last-of-type{
+    background: linear-gradient(to right, rgba(168,50,121,1) 0%, rgba(210,130,18,1) 100%);
+}
+
+.viewport {
+    background: #FFF;
+    border-radius: 0.3rem;
+    /* max-width: 100%;
+    height: auto;; */
+}
+
+div.viewport .card{
+    display: block;
+    position: relative;
+    padding: 10rem;
+}
+
+div.viewport .card:after{
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+}
+
+/* .container{
+    position: relative;
+    padding:
+} */
+
+div.viewport .card img{
+    display: block;
+    position:absolute;
+    width: 30vw;
+    height: auto; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#icon1{
+    display: block;
+    position: absolute;
+    color: #FFF;
+    font-size: 1.5rem;
+    max-width: 30vw;
+    height: auto; 
+    top: 63%;
+    left:calc(50% + 13vw); 
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#icon2{
+    display: block;
+    position: absolute;
+    color: #FFF;
+    font-size: 1.5rem;
+    max-width: 30vw;
+    height: auto; 
+    top: 84%;
+    left:calc(50% + 13vw);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}

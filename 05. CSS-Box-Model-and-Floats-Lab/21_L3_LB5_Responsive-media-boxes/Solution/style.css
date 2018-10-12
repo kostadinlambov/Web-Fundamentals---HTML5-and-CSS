@@ -1,0 +1,59 @@
+html {
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 1.5
+}
+body {
+    padding: 5rem;
+    background: #EEE;
+}
+
+.card {
+    background: #FFF;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    width: 28%;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.3);
+    margin: 2rem;
+    float: left;
+}
+
+.card .media {
+    position: relative;
+    overflow: hidden;
+}
+
+.card .media:after {
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+}
+
+.card .media img {
+    display: block;
+    position: absolute;
+    left: 0; right:0;
+    width: 100%;
+    height: auto; 
+}
+
+.card .content {
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.card .content h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 0 0.4rem 0;
+}
+
+.card .content a.button {
+    display: block;
+    background: #090;
+    color: #FFF;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    float: right;
+}

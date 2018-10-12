@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(238, 238, 238);
+}
+
+ul.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.gallery li {
+    list-style-type: none;
+    flex: 0 0 27%;
+    margin: 10px 0;
+    border: 10px solid black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.media {
+    flex: 0 0 100%;
+    position: relative;
+    margin: 0;
+    /* background: red; */
+    /* height: 100%; */
+    /* width: 400px; */
+    /* border: 5px solid green; */
+}
+
+.media:after {
+    display: block;
+    content: '';
+    padding-top: 560px;
+    /* width: 380px; */
+}
+
+img {
+    display: block;
+    /* border: 5px solid black; */
+    background: white;
+    padding: 5px;
+
+    /* Center the pictures */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Set the max-width and max height for a picture */
+img.picture {
+    width: 90%;
+    max-height: 500px;
+}

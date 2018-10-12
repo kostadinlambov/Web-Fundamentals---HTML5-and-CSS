@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(238, 238, 238);
+}
+
+ul.gallery li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 5px;
+    height: 350px;
+    width: 30%;
+}
+
+.media {
+    position: relative;
+    margin: 100px 0;
+    background: red;
+}
+
+.media:after {
+    display: block;
+    content: '';
+    padding-top: 350px;
+}
+
+img {
+    display: block;
+    border: 5px solid black;
+    background: white;
+    padding: 5px;
+    /* Center the pictures */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Set the max-width and max height for a picture */
+img.picture {
+    max-width: 100%;
+    max-height: 350px;
+}
+
+

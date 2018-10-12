@@ -1,0 +1,98 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Georgia", sans-serif;
+    font-size: 1em;
+    line-height: 1em; 
+}
+
+button {
+    padding: 0;
+    border: none;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.site {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.site > header:first-of-type {
+    border-bottom: 2px solid #000;
+    vertical-align: middle;
+}
+
+.site-title {
+    display: inline-block;
+    padding-right: 5vw;
+    font-weight: bold;
+    padding: 0;
+   
+}
+
+.site-title a {
+    font-size: 4rem;
+    color: #000;
+    background: #FFF;
+    border: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+header nav {
+    display: block;
+    float: right;
+    margin-top: 2rem;
+}
+
+header nav ul{
+    margin: 0;
+    min-height: 2px;
+    background: blue;
+    
+}
+
+header nav ul:after{
+    display:block;
+    content: '';
+    clear: both;
+}
+
+
+header nav li {
+    display: block;
+    float: left;
+    padding: 1rem;
+    background: red;
+}
+header nav li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 0.3rem;
+    color: #090;
+    outline: none;
+}
+
+header nav li a:focus,
+header nav li a:hover {
+    color: #FFF;
+    background: #090;
+}
+
+header nav li a:active {
+    background: #000;
+}
+

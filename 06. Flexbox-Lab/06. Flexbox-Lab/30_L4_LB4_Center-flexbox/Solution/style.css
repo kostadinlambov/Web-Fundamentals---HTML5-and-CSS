@@ -1,0 +1,31 @@
+body {
+    background: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    background: rgb(255, 255, 255);
+    color: black;
+    /* border: 1px solid black; */
+    border-radius: 0.5rem;
+    max-width: 50%;
+    padding: 1rem;
+    box-shadow: 0 0 4rem 0 rgba(0, 0, 0, 0.8);
+}
+
+.card p {
+    padding: 0;
+}
+
+.card div{
+    margin: 0 0 1rem 0;
+    font-weight: bold;
+}
+
+
+
