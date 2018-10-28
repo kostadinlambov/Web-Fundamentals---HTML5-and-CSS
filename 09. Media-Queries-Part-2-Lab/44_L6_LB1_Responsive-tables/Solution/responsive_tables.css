@@ -1,0 +1,39 @@
+@import url('reset.css');
+@import url('typography.css');
+
+body {
+    background: #EEE;
+    /* padding: 2rem; */
+}
+
+@media screen and (max-width: 800px) {
+    table thead {
+        display: none;
+    }
+
+    table,
+    table tbody,
+    table tr,
+    table td {
+        display: block;
+    }
+
+    table tr {
+        border: 2px solid black;
+    }
+
+    table tbody td:before{
+        display: inline-block;
+        width: 8rem;
+        font-weight: bold;
+        text-align: right;
+        padding-right: 1rem;
+        white-space: nowrap;
+        content: attr(data-label);
+    }
+
+
+    /* table tbody td:nth-child(1):before { content: attr(data-label); }
+    table tbody td:nth-child(2):before { content: attr(data-label); }
+    table tbody td:nth-child(3):before { content: attr(data-label); } */
+}
